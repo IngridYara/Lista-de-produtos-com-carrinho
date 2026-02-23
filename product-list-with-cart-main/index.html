@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&icon_names=cancel" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Frontend Mentor | Product list with cart</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,59 +18,70 @@
 </head>
 <body>
 
-  Desserts
+  <main>
+    <section>
 
-  Waffle with Berries
-  Waffle
-  6.50
-  Add to Cart
+      <h1>Desserts</h1>
 
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
+      <div id="items">
+  
+      </div>
 
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
+    </section>
 
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
+    <dialog>
 
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
+      <img src="assets/images/icon-order-confirmed.svg" alt="">
+      <h1>Order Confirmed</h1>
+      <p>We hope you enjoy your food!</p>
 
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
+      <div class="produtosFinais" id="produtosFinais">
 
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
+        <div class="produtoFinal">
 
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
+          <img src="assets/images/image-tiramisu-desktop.jpg" alt="">
+          <div class="notaFiscal">
+            <p class="nome">Classic Tiramisu</p>
+            <div>
+              <p class="quantidade">1x</p>
+              <p class="preco">@ $5.50</p>
+            </div>
+          </div>
+          <p class="totalNota">$5.50</p>
 
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
+          <hr>
 
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
+        </div>
+
+        <div class="totalcompraFinal">
+          <p>Order Total</p>
+          <p class="compraFinal">$46.50</p>
+        </div>
+      </div>
+      <button id="buttonFinaliza">Start New Order</button>
+    
+    </dialog>
+
+    <aside>
+
+      <h2 id="TqtProdutos">Your Cart (0)</h2>
+
+      <div class="items-escolhidos" id="items-escolhidos">
+
+        <img src="assets/images/illustration-empty-cart.svg" alt="">
+        <p>Your added items will appear here</p>
+      
+      </div>
+      
+    </aside>
+
+  </main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Ingrid Yara</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
